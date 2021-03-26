@@ -240,7 +240,7 @@ public class JsonAnalyserGUI extends javax.swing.JFrame {
                     break;
                 // Если нашлась ещё одна открывающая фигурная скобка
                 case '{':
-                    // Если не найдена кавычка
+                    // Если не найдена закрывающая скобка
                     if (findIndexOfClosingBracket(text.substring(i + 1, text.length()), '{') == -1) {
                         // Верунть негативный результат
                         return false;
